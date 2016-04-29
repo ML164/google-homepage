@@ -1,0 +1,89 @@
+<html>
+<head>
+  <style>
+  /* * {border: 1px dashed black;}*/
+  * {font-family: arial, sans-serif; font-size: small; margin: 0; padding: 0;}
+
+  /* navbar stylin' */
+  #navbar {color: rgb(75, 75, 75);}
+  #navbar ul {list-style: none; text-align: right; padding: 0; margin-right: 30px; margin-top: 15px;}
+  #navbar li { display: inline-block; text-align: center; padding-left: 17px;}
+  #navbar ul li {vertical-align: middle;}
+  #monogram-icon {border-radius: 50%;}
+  #notification-icon {width: 20px;}
+  #grid-icon {width: 15px;}
+
+  /* navbar pseudo classes */
+  #navbar li:hover {text-decoration: underline;}
+  a {text-decoration: none; color: rgb(75, 75, 75);}
+
+  /* search box */
+  #searchbox {border:1px solid lightgray; height: 40px; width: 50%; position: absolute; top: 300px; left: 25%;}
+
+  /* the google image */
+  #image img{display: block; margin-left: auto; margin-right: auto; margin-top: 150px;}
+
+  /* the two search buttons below the search bar */
+  #button-wrap {text-align: center;}
+  .search-button {height: 20px; background-color: #f1f1f1; color: #222; padding: 8px 10px 6px 10px; display: inline-block; text-align: center; position: relative; top: 100px; margin-left: 10px; color: rgb(125, 124, 124); overflow: hidden; font-weight: bold;}
+
+  /* psuedo classes for search buttons*/
+.search-button:hover {color: #222; border: 1px solid #e5e5e5; height: 18px; padding: 7px 9px 7px 9px; }
+#searchbox:hover {border: 1px solid rgb(116, 117, 117);}
+#searchbox:focus {border: 1px solid rgb(127, 194, 242);}
+
+/*Footer styles*/
+footer { background-color: #f1f1f1; position:fixed; left:0px; bottom:0px; height:40px; width:100%; overflow:hidden; border-top: 1px solid lightgray; color: #797474;}
+#right-footer{float: right; padding-top: 15px;}
+#left-footer {float: left; padding-top: 15px; }
+footer ul li {display: inline-block; padding-right: 20px; padding-left:20px;}
+
+/*Footer pseudo classes*/
+footer li:hover {text-decoration: underline;}
+
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+      <ul>
+          <li><a href="https://github.com/ML164">ML164</a></li>
+          <li>Gmail</li>
+          <li>Images</li>
+          <li><img src="https://cdn1.iconfinder.com/data/icons/material-core/16/apps-128.png" id="grid-icon"></li>
+          <li><img src="https://image.freepik.com/free-icon/church-bell_318-9123.jpg" id="notification-icon"/></li>
+          <li><img src="https://lh3.googleusercontent.com/-wtZL_O_ttZ4/AAAAAAAAAAI/AAAAAAAAAAA/ADhl2yrmTOAXWNW_JtyhCxT2oHTuyHRZwg/s32-c-mo/photo.jpg"/ id="monogram-icon"></li>
+      </ul>
+  </nav>
+  <section>
+      <div id="image">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/></div>
+      <div>
+        <input type="text" name="searchbox" id="searchbox">
+      </div>
+      <div id="button-wrap">
+        <a href="#"><div id="google-search" class="search-button">Google Search</div></a>
+        <a href="#"><div id="feeling-lucky" class="search-button">I'm Feeling Lucky</div></a>
+      </div>
+  </section>
+  <footer>
+      <div ="left-wrapper">
+        <div id="left-footer">
+          <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+          </ul>
+        </div>
+    </div>
+    <div id="right-wrapper">
+      <div id="right-footer">
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
